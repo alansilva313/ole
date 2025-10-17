@@ -11,6 +11,12 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
+// 🔹 Responde imediatamente requisições OPTIONS (preflight)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204); // No Content
+    exit;
+}
+
 class EditarUsuario
 {
     private $data;
@@ -48,7 +54,6 @@ class EditarUsuario
             exit;
         }
 
-        // Verifica ID obrigatório via URL
         $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
         if ($id <= 0) {
             echo json_encode([
@@ -58,7 +63,6 @@ class EditarUsuario
             exit;
         }
 
-        // Verifica se usuário existe
         if (!$this->usuarioExiste($id)) {
             echo json_encode([
                 "message" => "Usuário não encontrado.",
@@ -67,7 +71,6 @@ class EditarUsuario
             exit;
         }
 
-        // Campos permitidos para edição (removido password)
         $camposPermitidos = ['name', 'email', 'username', 'isActive', 'isAdmin'];
         $updates = [];
         $params = [];
@@ -87,7 +90,6 @@ class EditarUsuario
             exit;
         }
 
-        // Monta SQL dinâmico
         $sql = "UPDATE users SET " . implode(", ", $updates) . " WHERE id = ?";
         $stmt = Conn::connect()->prepare($sql);
         foreach ($params as $index => $value) {
