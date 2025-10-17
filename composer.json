@@ -1,0 +1,17 @@
+{
+    "name": "allan/integraoletv",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/",
+            "clientes\\": "clientes/"
+          
+        }
+    },
+    "authors": [
+        {
+            "name": "alansilva313",
+            "email": "allansillva313@gmail.com"
+        }
+    ],
+    "require": {}
+}

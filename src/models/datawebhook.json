@@ -1,0 +1,60 @@
+{
+    "DataObject": {
+        "Active": true,
+        "Version": 3,
+        "Timestamp": "2025-10-16T18:53:26",
+        "Contract": {
+            "Id": 20743,
+            "Number": "0020743",
+            "Description": "Contrato N\u00ba 20743 (L-29320) - MARIA VERONICA PEIXOTO DE OLIVEIRA",
+            "BeginContractVigency": "2024-11-11",
+            "EndContractVigency": "2025-11-11",
+            "Fingerprint": "ec95ab28-b1ef-11eb-b0fd-000c29a6a9a7"
+        },
+        "Client": {
+            "Name": "MARIA VERONICA PEIXOTO DE OLIVEIRA",
+            "TxId": "921.576.534-49",
+            "Email": "veronica.peixoto@uol.com.br",
+            "Phone": "5581933616242",
+            "CellPhone": "5581986998684"
+        },
+        "CompanyPlace": {
+            "Id": 1,
+            "Code": "002",
+            "Name": "NET.COM  PROVEDOR DE INTERNET"
+        },
+        "Status": {
+            "Code": 1,
+            "Description": "Normal"
+        },
+        "Stage": {
+            "Code": 3,
+            "Description": "Aprovado"
+        },
+        "Services": [
+            {
+                "Active": true,
+                "ContractItem": 407775,
+                "Fingerprint": "1785f393-26ed-4a28-b53e-179628189aed",
+                "Description": "NET.COM TV",
+                "IntegrationCode": "TV_BOX",
+                "IntegratorType": 15,
+                "Demonstration": false,
+                "DemonstrationFinalDate": "",
+                "ServiceTag": ""
+            }
+        ],
+        "Patrimonies": []
+    },
+    "Headers": {
+        "Host": "hub.sysprov.com.br",
+        "token": "fMgrHYqjteCOHpH1tmxbruiDxdPvqsA7",
+        "username": "netcom-pe",
+        "password": "N3t2o24!",
+        "Accept": "application\/json, text\/json, text\/x-json, text\/javascript, application\/xml, text\/xml",
+        "User-Agent": "RestSharp\/106.6.10.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Content-Type": "application\/json",
+        "Content-Length": "906"
+    }
+}

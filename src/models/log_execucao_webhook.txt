@@ -1,0 +1,10 @@
+[2025-08-07 17:51:25] Início do processamento do WebHook
+[2025-08-07 17:51:25] Dados recebidos com sucesso.
+[2025-08-07 17:51:25] JSON decodificado com sucesso.
+[2025-08-07 17:51:25] Valores nulos substituídos.
+[2025-08-07 17:51:25] Dados formatados salvos em datawebhook.json.
+[2025-08-07 17:51:47] Status do contrato verificado: Normal
+[2025-08-07 17:51:53] Cliente enviado para OLE. Resposta: "{\n    \"error\": \"Could not resolve host: api.oletv.net.brclientes\"\n}"
+[2025-08-07 17:51:57] Cliente inserido localmente.
+[2025-08-07 17:51:57] WebHook salvo no banco.
+[2025-08-07 17:51:57] Processamento do WebHook finalizado com sucesso.
